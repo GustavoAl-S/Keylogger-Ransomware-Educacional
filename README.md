@@ -2,9 +2,7 @@
 
 ESTES SCRIPTS SÃO APENAS PARA FINS EDUCACIONAIS E DE PESQUISA
 
-Estes malwares foram desenvolvidos com o intuito de entender de forma etica como eles funcionam, com o objetivo de aprendizado e conscientização sobre segurança cibernetica.
-
-Todos eles feitos e testados em um ambiente controlado, com dados fictícios somente para testes.
+Este projeto foi desenvolvido para fins totalmente educacionais, com o intuito de aprender como funcionam um ransomware e um keylogger na pratica e assim obter conhecimento sobre como se proteger e se conscientizar sobre seugrança cibernetica. Todos os malwares foram testados em um ambiente totalmente controlado e utilizados em dados ficticios para testes. No keylogger alem da sua implementação basica de capturar a entrada do teclado, o modificamos para rodar em segundo plano e adicionamos um envio desses logs capturados para um e-mail.
 
 # Ransomware
 
@@ -48,3 +46,4 @@ Porem o antivirus nao faz tudo sozinho, por isso outra medidas é utilizar ferra
 Outro metodo, e um dos mais importantes é a concientização sobre phishing. O ponto mais fraco da segurança é o ser humano, por isso deve se educar as pessoas sobre a engenharia social e ensina-las a não clicar em links suspeitos, pdfs falsos, e-mails chamativos, etc.
 
 Contra o Ransonware, além das praticas acima, busque manter um backups autaticos e testar sua recuperação reguralamente.
+
