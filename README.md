@@ -2,9 +2,9 @@
 
 ESTES SCRIPTS SÃO APENAS PARA FINS EDUCACIONAIS E DE PESQUISA
 
-Este projeto foi desenvolvido para fins totalmente educacionais, com o intuito de aprender como funcionam um ransomware e um keylogger na pratica e assim obter conhecimento sobre como se proteger e se conscientizar sobre seugrança cibernetica. Todos os malwares foram testados em um ambiente totalmente controlado e utilizados em dados ficticios para testes. No keylogger alem da sua implementação basica de capturar a entrada do teclado, o modificamos para rodar em segundo plano e adicionamos um envio desses logs capturados para um e-mail.
+Este projeto foi desenvolvido para fins totalmente educacionais, com o intuito de aprender como funcionam um ransomware e um keylogger na prática e, assim, obter conhecimento sobre como se proteger e se conscientizar sobre segurança cibernética. Todos os malwares foram testados em um ambiente totalmente controlado e utilizados em dados fictícios para testes. No keylogger, além da sua implementação básica de capturar a entrada do teclado, o modificamos para rodar em segundo plano e adicionamos o envio desses logs capturados para um e-mail.
 
-# Ransomware
+## Ransomware
 
 Testes do ransomware:
 
@@ -19,31 +19,22 @@ Após criptografar:
 
 # Keylogger Educacional
 
-Keylogger é um malware que tem como objeto capturar toda entrada do teclado do alvo. Entradas que podem ser letras, espaços, numeros, etc.
-E atraves dessa ferramentas, se for utilizada de forma maliciosa, o atacante pode capturar logins de senhas, e-mails, dados confidenciais e diversas outras informações importantes que forem digitadas no teclado da vitima.
+Um Keylogger é tipo de malware que tem como objetivo capturar toda entrada do teclado do alvo, incluindo letras, números e caracteres especiais. Através dessa ferramenta, caso utilizada de forma maliciosa, um atacante pode capturar credenciais de acesso, e-mails, dados confidenciais e diversas outras informações importantes que forem digitadas pela vítima.
 
-Meu objetivo foi criar um keylogger de forma educacional para entender como funciona esse malware e como se proteger na pratica dele. 
+Este projeto foi desenvolvido com fins estritamente educacionais para entender como funciona esse malware e como proteger-se contra essa ameaça na prática
 
-Para preparar seu ambiente, instale a biblioteca pynput, para monitorar o teclado e assim reaja quando uma determinado tecla for clicada.
+## Preparação do ambiente:
+Para preparar o ambiente, é necessário instalar a biblioteca pynput, utilizada para monitorar e reagir a cada tecla pressionada. Cada interação do usuário é salva em um arquivo .txt na ordem sequencial da digitação.
+Para uma melhor organização e leitura do arquivo .txt, usamos o conjunto IGNORAR. Ele filtra teclas de controle (como comandos do sistema) que poderiam poluir o arquivo, garantindo que o texto final seja claro e contínuo.
 
-Cada interação do usuário sera salva em um arquivo .txt na ordem sequencial que foi digitada. 
-Para uma melhor organização e leitura do arquivo .txt usamos o conjunto IGNORAR que recebe algumas teclas que serão ignoradas durante a gravação, isso faz com o texto nao fique quebrado e confuso quando formos realizar a sua leitura.
-
-Após a implementação do keylogger basico funcionando, utilizei a biblioteca secure-smtlib e configurei para que logs das entradas fossem enviadados por e-mail a cada 60 segundos.
-
-Logs recebidos pelo e-mail:
-
-<img width="927" height="187" alt="Image" src="https://github.com/user-attachments/assets/1a1aa90d-80d5-468f-acce-b946e293d220" />
-
+Após a implementação do keylogger básico funcionando, utilizei a biblioteca secure-smtlib e a configurei para que logs das entradas fossem enviados por e-mail a cada 60 segundos.
 
 # Como se Proteger
 
-Por mais que seja a coisa mais basica a se fazer, e justamente por isso as vezes é deixado de lado, é manter os firewall e antivirus atualizados.
-Inclusive, pode acontecer de caso voce for tentar rodar os codigos do repositorio, o antivirus do seu computador bloquea-los. Ou seja por mais que seja simples é muito eficaz verificar e manter seus antivirus atualizados porque eles sao a primeira camada de segurança do seu sistema.
+Uma das melhores praticas é manter a primeira camada de segurança do seu computador (antivirus e firewalls) sempre atualizados e ativos.
+Inclusive, pode acontecer de caso voce for tentar rodar os codigos do repositorio, o antivirus do seu computador pode bloquea-los. 
 
-Porem o antivirus nao faz tudo sozinho, por isso outra medidas é utilizar ferramnatas para monitorar processos suspeitos, bloqueando atividades suspeitas que estejam criptografando dados por exemplo.
+No entanto, o antivírus não resolve tudo sozinho. É recomendável utilizar ferramentas complementares que monitorem o comportamento do sistema. Elas servem para identificar e interromper atividades estranhas em tempo real, como um programa tentando criptografar seus arquivos sem autorização.
 
-Outro metodo, e um dos mais importantes é a concientização sobre phishing. O ponto mais fraco da segurança é o ser humano, por isso deve se educar as pessoas sobre a engenharia social e ensina-las a não clicar em links suspeitos, pdfs falsos, e-mails chamativos, etc.
-
-Contra o Ransonware, além das praticas acima, busque manter um backups autaticos e testar sua recuperação reguralamente.
+Outro ponto crucial é a conscientização sobre o fator humano. Muitas vezes, a maior vulnerabilidade não está na máquina, mas em quem a utiliza. Por isso, é essencial treinar as equipes para identificar tentativas de "engenharia social", ensinando-as a desconfiar de links urgentes, arquivos em PDF de fontes desconhecidas ou e-mails com promessas excessivas.
 
